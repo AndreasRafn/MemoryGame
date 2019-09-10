@@ -174,12 +174,9 @@ function calculateScore(numberOfMoves) {
     else if (numberOfMoves <= scoreThresholds[1]) {
         return 2;
     }
-    else if (numberOfMoves <= scoreThresholds[2]) {
-        return 1;
-    }
     else {
-        return 0;
-    }
+        return 1;
+    }    
 }
 
 /**
