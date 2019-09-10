@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Matching Game</title>   
+    <meta name="viewport" content="width=device-width,initial-scale=1">    
+    <link rel="stylesheet" href="css/fontawesome-free-5.10.1-web/css/all.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav>
+        <!-- navigation not part of mockup, but will be added here when site complexity calls for it -->
+    </nav>
+    <main>
+        <!-- the modal is to use the entire page hence is placed in the main structure -->
+        <div class="modal">
+            <!-- the modal dialog window that is shown above the game at the time of completion -->
+            <div class="modal-dialog">
+                <h1>You did it!</h1>
+                <p>In 
+                    <span class="elapsed" title="less time elapsed is better">00:00:00</span> with 
+                    <span class="moves"></span> moves, and a score of
+                    <!-- stars will be enlarged in this dialog vs. the score-panel using 'large-stars' class -->
+                    <ul class="stars large-stars" title="more stars is better">
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                        <li><i class="far fa-star"></i></li>
+                    </ul>
+                </p>
+                <button id="play-again-button" class="button"><span>Play Again!</span></button>
+            </div>
+        </div>
+        
+        <header>
+            <h1>Matching Game</h1>
+        </header>
+
+        <section class="score-panel-section">
+            <ul class="stars" title="more stars is better">
+                <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+                <li><i class="far fa-star"></i></li>
+            </ul>                     
+            
+            <div>
+                <span class="moves" title="less moves is better">3</span> Moves
+            </div>
+            
+            <div class="elapsed-container">
+                Elapsed: <span class="elapsed" title="less time elapsed is better">00:00:00</span>
+            </div>            
+            
+            <div class="restart" title="Restart Game">
+                <i class="fas fa-undo-alt"></i>
+            </div>
+        </section>       
+
+        <section class="deck-section">
+            <!-- empty initially as deck contents are managed entirely with code -->
+            <ul class="deck">
+            </ul>
+        </section>
+        
+        <footer>
+            <!--footer not part of mockup, but will be added here when needed-->
+        </footer>
+    </main>   
+
+    <!-- script reference last to ensure the DOM loading properly before code execution -->
+    <script src="js/scripts.js"></script>
+</body>
+</html>
