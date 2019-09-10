@@ -176,7 +176,7 @@ function calculateScore(numberOfMoves) {
     }
     else {
         return 1;
-    }    
+    }
 }
 
 /**

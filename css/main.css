@@ -14,7 +14,7 @@ body {
   width: 100%;
   height: 100%;
   margin: 0;
-  padding: 0;  
+  padding: 0;
 }
 
 body {
@@ -140,7 +140,7 @@ h1 {
    * a font-size relative width with a bit of slack is used so that the elapsed 
    * time does not visible move around as its value changes 
    */
-  width: 9rem; 
+  width: 9rem;
 }
 
 .score-panel-section {
@@ -164,7 +164,7 @@ h1 {
 }
 
 .large-stars {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .restart {
@@ -223,13 +223,14 @@ h1 {
   border-width: 0;
   outline: none;
   border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0, 0, 0, .6);  
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
   background-color: #02ccba;
   color: #ecf0f1;
-  transition: background-color .3s;
+  transition: background-color 0.3s;
 }
 
-.button:hover, .btn:focus {
+.button:hover,
+.btn:focus {
   background-color: #02afa1;
 }
 .button span {
@@ -238,27 +239,27 @@ h1 {
   font-weight: bold;
 }
 .button:before {
-  content: "";  
+  content: "";
   position: absolute;
   top: 50%;
-  left: 50%;  
+  left: 50%;
   display: block;
   width: 0;
-  padding-top: 0;    
-  border-radius: 100%;  
-  background-color: rgba(236, 240, 241, .3);
+  padding-top: 0;
+  border-radius: 100%;
+  background-color: rgba(236, 240, 241, 0.3);
   transform: translate(-50%, -50%);
 }
 .btn:active:before {
   width: 120%;
-  padding-top: 120%;  
-  transition: width .2s ease-out, padding-top .2s ease-out;
+  padding-top: 120%;
+  transition: width 0.2s ease-out, padding-top 0.2s ease-out;
 }
 
 /*
  * Media queries
  */
-@media screen and (min-width: 480px) and (min-height: 560px) {  
+@media screen and (min-width: 480px) and (min-height: 560px) {
   html {
     font-size: 14px;
   }
@@ -266,19 +267,19 @@ h1 {
   .score-panel-section {
     width: 440px;
   }
-  
+
   .deck {
     width: 460px;
     height: 460px;
   }
 
-  .modal-dialog { 
+  .modal-dialog {
     width: 420px;
     height: 420px;
   }
 }
 
-@media screen and (min-width: 640px) and (min-height: 720px) {  
+@media screen and (min-width: 640px) and (min-height: 720px) {
   html {
     font-size: 16px;
   }
@@ -286,7 +287,7 @@ h1 {
   .score-panel-section {
     width: 600px;
   }
-  
+
   .deck {
     width: 620px;
     height: 620px;
